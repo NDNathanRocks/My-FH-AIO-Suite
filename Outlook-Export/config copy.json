@@ -1,0 +1,18 @@
+{
+  "output_root": "M:\\Staffing Services Agency Intake\\Email Backups\\Outlook",
+  "allowed_output_root": "M:\\Staffing Services Agency Intake\\Email Backups",
+  "mailbox_name": "FH Agency Staffing [FH]",
+  "folder_path": "Inbox",
+  "include_subfolders": true,
+  "active_folder_max_items": 100,
+  "dry_run_default": true,
+  "pause_every": 50,
+  "pause_seconds": 0.2,
+  "save_retries": 4,
+  "retry_delay_seconds": 2.0,
+  "memory_error_delay_seconds": 15.0,
+  "minimum_free_space_mb": 500,
+  "max_windows_path": 240,
+  "database_commit_batch": 100,
+  "verify_existing_files_on_start": false
+}

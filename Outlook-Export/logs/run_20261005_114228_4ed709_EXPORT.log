@@ -1,0 +1,5 @@
+2026-10-05 11:42:29,164 | INFO | RUN START | id=20261005_114228_4ed709_EXPORT | source=\\HR Transformation [FH]\Inbox\PP 18 | loaded_duplicates=6108
+2026-10-05 11:42:29,476 | INFO | FOLDER SCAN | \\HR Transformation [FH]\Inbox\PP 18 | items=1
+2026-10-05 11:42:30,491 | INFO | EXPORTED | type=MailItem | \\fraserhealth.org\dfs\globalapps\HR Transformation\Email Backups\Outlook\PP 18\2026-07-23_110516 - RE_ Delegate access - MailItem - 7c8ed29863f5.msg
+2026-10-05 11:42:30,546 | INFO | REPORT WRITTEN | C:\Users\ndsouza\OneDrive - HealthBC\Desktop\myGithub\Outlook-Export\logs\audit_20261005_114228_4ed709_EXPORT.xlsx
+2026-10-05 11:42:30,547 | INFO | RUN COMPLETE | success

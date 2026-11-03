@@ -1,0 +1,83 @@
+# --- Python bytecode / compiled / DLLs ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+*.dll
+*.lib
+*.pdb
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.env/
+.python-version
+
+# --- Build / packaging / PyInstaller ---
+/build/
+/dist/
+*.egg-info/
+*.egg
+*.egg-cache
+*.whl
+*.spec
+*.pyz
+*.manifest
+*.tmp
+
+# --- Executables & logs (built artifacts) ---
+*.exe
+*.log
+
+# --- Databases ---
+*.sqlite3
+
+# --- Test / tooling caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# --- OS junk ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# --- App config written at runtime ---
+rfp_config.json
+utils/rfp_config.json
+utils/Company Info.csv
+
+# --- Generated output folders (project-specific) ---
+Generated RFPs/
+Merged Invoices and RFPs/
+Invoices that didn't Merge Successfully/
+Invoices that Merged Successfully/
+
+# --- Temp folders used by Attachment Processor ---
+__temp__/
+temp/
+*/temp
+*/__temp__/
+
+# --- Excel reports (outputs) ---
+*.xlsx
+
+# --- Misc scratch ---
+*.bak
+*.swp
+*~
