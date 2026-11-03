@@ -56,3 +56,8 @@ Audit-Processor/output/
 *.xlsm
 *.xls
 !**/tests/fixtures/**/*.xlsx
+
+# Macro-Vision user data (per machine)
+Macro-Vision/vision_suite_save.json
+Macro-Vision/vision_suite_save.json.*
+Macro-Vision/vision_suite_run_log.txt*

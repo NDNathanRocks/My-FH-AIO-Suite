@@ -4,7 +4,7 @@ One local Streamlit app with three pages:
 
 - **Home** – pick a tool; clear all uploaded data.
 - **Kronos audits** – guided 3-step flow (select → upload & configure → review & run) for: 43/843 on GRTW, GRTW shift mismatch, OT work rule with 5.2 LCT, Unprocessed TORs, Casuals with LOA 1##.1, Negative accrual bank, NBA OC > 72 h, CTO/OTO/STO cascade to LOA, and PC Portfolio Enrichment Only. Optional Outlook drafts.
-- **HR Data Toolbox** – enrich a working Excel/CSV file from any number of lookup files (merged from `HR Data Toolbox Web v1.3`; same rules and output).
+- **HR Data Toolbox** – enrich a working Excel/CSV file from any number of lookup files (merged from the former `HR Data Toolbox Web v1.3` app, removed in favour of this page; same rules and output).
 
 ## Setup and run
 
@@ -50,7 +50,7 @@ python -m pip install -r requirements-dev.txt
 python -m pytest tests
 ```
 
-`tests/golden/audit_legacy.json` holds findings produced by the pre-refactor app; `test_parity_audits.py` proves the refactor matches them. `test_hr_parity.py` compares the merged HR engine with the original `HR Data Toolbox Web v1.3/engine.py`.
+`tests/golden/audit_legacy.json` holds findings produced by the pre-refactor app; `test_parity_audits.py` proves the refactor matches them. `test_hr_parity.py` compared the merged HR engine with the original v1.3 engine before that folder was removed; it now skips (restore the folder from git history to re-run it).
 
 ## Limitations
 
