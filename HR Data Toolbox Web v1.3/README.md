@@ -1,3 +1,5 @@
+> **Superseded.** This tool is now the **HR Data Toolbox** page of `Audit-Processor` (`streamlit run audit_app.py`) with identical matching rules and output. This folder is kept unchanged for rollback until its removal is approved (see root `PLAN.md`).
+
 # HR Data Toolbox Web v1.3
 
 A local Streamlit app for enriching an Excel or CSV working file from one or more Excel/CSV lookup files. Output is always a new `.xlsx` workbook.
