@@ -70,3 +70,18 @@ def test_full_run_mixed_success_and_failure():
     assert at.session_state["audit_running"] is False
     downloads = [b for b in at.get("download_button")]
     assert downloads, "expected download buttons"
+
+
+def test_ot_audit_offers_outlook_draft_button():
+    at = _app()
+    at.session_state["workflow_stage"] = 3
+    at.session_state["chosen_audits"] = ["ot_swapped_lct"]
+    at.session_state["chosen_portfolio_only"] = False
+    at.session_state["upload_cache"] = {"schedule_shift_wr_cpp": _mem("s", fx.SCHEDULE_SHIFT_WR),
+                                        "schedule_audit": _mem("sa", fx.SCHEDULE_AUDIT), "supervisor_portfolio": _mem("sp", fx.SUPERVISOR)}
+    at.session_state["run_config"] = {"selected": ["ot_swapped_lct"], "tool": False, "portfolio_choices": {"ot_swapped_lct": True},
+                                      "options": {"ot_swapped_lct": {"portfolio_id_column": "Employee ID"}}, "employee_details_enabled": False}
+    at.run()
+    next(b for b in at.button if b.label == "Run selected items").click().run()
+    assert not at.exception
+    assert any(b.label == "Create and open Outlook email draft" for b in at.button)
