@@ -88,17 +88,33 @@ def test_csv_errors(tmp_path):
         list(au.process_csv_and_fill_pdfs(tracker_csv(tmp_path / "m.csv", [row("Total", rfp="N"), row("")]), str(TEMPLATE), str(tmp_path), "X", PAYEE))
 
 
-def test_total_in_site_column_is_not_an_end_marker_when_leading_column_dropped(tmp_path, monkeypatch):
-    """Current behaviour (PLAN.md D4): 'Total' under Site does not stop generation for this layout."""
+def test_total_left_of_invoice_column_stops_generation(tmp_path, monkeypatch):
+    """D4: 'Total' in any column left of Invoice # (e.g. Notes/Site) ends the sheet."""
     monkeypatch.setattr(au, "fill_pdf_from_row_fitz", lambda *a, **k: None)
-    csv_path = tracker_csv(tmp_path / "t.csv", [row("A"), ["", "Total", "", "999", "", "", "", "", "", "", "", "", "N"]])
-    assert [t[2] for t in au.process_csv_and_fill_pdfs(csv_path, str(TEMPLATE), str(tmp_path / "o"), "X", PAYEE)] == ["A", "999"]
+    csv_path = tracker_csv(tmp_path / "t.csv", [row("A"), ["", "Total", "", "999", "", "", "", "", "", "", "", "", "N"], row("B")])
+    assert [t[2] for t in au.process_csv_and_fill_pdfs(csv_path, str(TEMPLATE), str(tmp_path / "o"), "X", PAYEE, only_new=False)] == ["A"]
 
 
-@pytest.mark.xfail(strict=True, raises=UnboundLocalError, reason="PLAN.md D3: fallback crashes; fix awaits owner decision")
-def test_no_n_rows_but_blank_rfp_cells_fallback(tmp_path, monkeypatch):
-    """Blank 'RFP Prepared' cells are meant to be treated as new when no row is marked N (see PLAN.md D3)."""
+ADVANCEDHOME = ["", "Notes", "Invoice #", "Date Received", "Date Invoice Due", "Site", "Unit", "RFP Prepared (Y/N)"]
+
+
+@pytest.mark.parametrize("padding", [True, False])
+def test_owner_layout_total_row_never_becomes_an_invoice(tmp_path, monkeypatch, padding):
+    """Real AdvancedHome layout: 'Total' under Notes, invoice count (4) under Invoice #."""
     monkeypatch.setattr(au, "fill_pdf_from_row_fitz", lambda *a, **k: None)
+    data = [["", "", inv, "5/19/2026", "6/18/2026", "DH", "Emergency", "N"] for inv in ("7458", "7444", "7472", "7418")]
+    if padding:
+        data += [["", "", "", "", "1/30/1900", "", "", ""]] * 5
+    data += [["", "Total", "4", "", "", "", "", ""]]
+    csv_path = tracker_csv(tmp_path / "t.csv", data, ADVANCEDHOME)
+    for only_new in (True, False):
+        invs = [t[2] for t in au.process_csv_and_fill_pdfs(csv_path, str(TEMPLATE), str(tmp_path / "o"), "AdvancedHome", PAYEE, only_new=only_new)]
+        assert invs == ["7458", "7444", "7472", "7418"]
+
+
+def test_no_n_rows_but_blank_rfp_cells_reports_none(tmp_path, monkeypatch):
+    """D3: no row marked N + blank RFP cells -> clear error, nothing generated."""
+    monkeypatch.setattr(au, "fill_pdf_from_row_fitz", lambda *a, **k: pytest.fail("must not generate"))
     csv_path = tracker_csv(tmp_path / "b.csv", [row("C1", rfp=""), row("C2", rfp="Y")])
-    ticks = list(au.process_csv_and_fill_pdfs(csv_path, str(TEMPLATE), str(tmp_path / "o"), "X", PAYEE, only_new=True))
-    assert ticks == [(1, 1, "C1")]
+    with pytest.raises(ValueError, match=r"No new RFPs to generate.*1 row\(s\) have a blank"):
+        list(au.process_csv_and_fill_pdfs(csv_path, str(TEMPLATE), str(tmp_path / "o"), "X", PAYEE, only_new=True))

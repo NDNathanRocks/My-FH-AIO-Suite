@@ -119,8 +119,11 @@ def test_check_page_helpers(tmp_path):
     assert lk.raw_lookup[("727012", "INV-1")] == (100.0, "C1")
     assert lk.norm_lookup[("727012", "inv1")] == (150.0, "C1,C2")
     assert lk.norm_collisions == {("727012", "inv1")} and lk.source_rows == 3
-    # Current behaviour (PLAN.md D5): a blank check number becomes the text "nan".
-    assert lk.raw_lookup[("727012", "X9")] == (0.0, "nan")
+    # D5: a blank check number is recorded as empty, never the text "nan".
+    assert lk.raw_lookup[("727012", "X9")] == (0.0, "")
+    ha2 = tmp_path / "ha2.xlsx"
+    pd.DataFrame({"Vendor ID": ["1"], "Invoice Number": ["Q1"], "Payment Total Amount": ["5"], "Last Issued Check Num": [None]}).to_excel(ha2, index=False)
+    assert audit_page.build_ha_lookup(str(ha2))[("1", "q1")] == (5.0, "")
 
 
 def test_audit_page_helpers(tmp_path):

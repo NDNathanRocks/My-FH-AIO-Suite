@@ -239,6 +239,8 @@ def build_ha_lookup(ha_xlsx: str, *, run_id: str = "-") -> HaLookup:
             paid = 0.0
             
         rem = str(r.get("Last Issued Check Num","")).strip()
+        if rem.lower() in ("nan", "none", "nat"):  # blank cell read by pandas (D5)
+            rem = ""
         if inv_raw_key:
             raw_paid[(vid, inv_raw_key)]["paid"] += paid
             if rem:
