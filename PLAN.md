@@ -82,6 +82,8 @@ Differences: shared header styling, formula-like text kept as text, per-tool iso
 
 ## Completed work
 
+**Follow-up (after merge to main).** Outlook-Export: backward-compatibility tests on copies of the production DB and all backups (v1.5.1 and part-migrated v1.5.2 schemas) and both config files: historical rows unchanged, no re-export, old exe can still write. Audit-Processor: Outlook draft added for "OT Work rule and swapped in LCT"; all email wording updated per owner and moved to `audits/email_templates.py`; TOR email counts TORs and days from the cutoff.
+
 **Owner decisions D1–D5.** Applied as above; RFP tests now 55 passing (no xfail), including the real AdvancedHome layout with and without padding rows.
 
 **Stage 4 – Sweep.** Added Macro-Vision README. Ran all suites (Audit 89, Outlook 44, RFP 52 + 1 documented xfail), `py_compile` on every tracked script, ruff (pyflakes) on changed code, and searches for secrets (none), machine paths and TODOs (only in already-tracked artifacts → D1).

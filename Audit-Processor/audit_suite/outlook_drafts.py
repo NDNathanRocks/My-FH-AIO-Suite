@@ -53,11 +53,22 @@ def email_details(frame):
     return to_values, cc_values, frame.loc[mask].copy().reset_index(drop=True)
 
 
-def email_body_for(audit, attachment_frame) -> str:
-    body = audit.email_body_html or ""
-    if audit.key == "negative_accrual" and attachment_frame["Accrual Code"].fillna("").astype(str).str.contains(r"\d", regex=True).any():
-        body += "<p>The audit also includes non-cascading pay codes that require review. Please review the coding and complete any required corrections.</p>"
-    return body
+def email_body_for(audit, attachment_frame, source_frame=None) -> str:
+    """Render the audit's template (``audits/email_templates.py``) to HTML."""
+    from datetime import date, timedelta
+
+    from .audits.email_templates import NEGATIVE_ACCRUAL_NON_CASCADING, days_phrase, to_html, tor_phrase
+    text = audit.email_body_html or ""
+    if audit.key == "unprocessed_tors":
+        attrs = getattr(source_frame, "attrs", {}) or getattr(attachment_frame, "attrs", {}) or {}
+        cutoff = attrs.get("cutoff_date") or date.today() - timedelta(days=3)
+        text = text.format(tor_phrase=tor_phrase(len(attachment_frame)), days_phrase=days_phrase((date.today() - cutoff).days))
+    if audit.key == "negative_accrual" and "Accrual Code" in attachment_frame and \
+            attachment_frame["Accrual Code"].fillna("").astype(str).str.contains(r"\d", regex=True).any():
+        closing = "Please reply with your findings once the review is complete."
+        text = text.replace(closing, NEGATIVE_ACCRUAL_NON_CASCADING + "\n\n" + closing) if closing in text \
+            else text + "\n\n" + NEGATIVE_ACCRUAL_NON_CASCADING
+    return to_html(text)
 
 
 def temp_dir() -> Path:
@@ -118,7 +129,7 @@ def create_outlook_draft(audit, frame) -> int:
     if attachment_frame.empty:
         raise ValueError("No rows remain for the email attachment after exclusions.")
     name = f"Audit - {safe_filename(audit.name)} {date.today():{DATE_FMT}}.xlsx"
-    _create_draft(audit.email_subject, "; ".join(to_values), "; ".join(cc_values), email_body_for(audit, attachment_frame),
+    _create_draft(audit.email_subject, "; ".join(to_values), "; ".join(cc_values), email_body_for(audit, attachment_frame, frame),
                   name, audit_workbook_bytes(attachment_frame, audit.name, audit.source_name))
     return len(attachment_frame)
 

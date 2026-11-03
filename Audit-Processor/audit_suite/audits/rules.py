@@ -54,6 +54,7 @@ def audit_unprocessed_tors(frame, cutoff_date=None, today=None, **_):
         result["_sort"] = created.loc[matched].values
         result = result.sort_values("_sort", kind="stable").drop(columns="_sort")
     result = result.reset_index(drop=True)
+    result.attrs["cutoff_date"] = cutoff_date  # used for the Outlook draft wording
     unparsed = int((created.isna() & frame["Creation Date"].map(clean_text).ne("")).sum())
     if unparsed:
         result.attrs["summary_messages"] = [f"{unparsed} row(s) had an unreadable Creation Date and were not evaluated."]

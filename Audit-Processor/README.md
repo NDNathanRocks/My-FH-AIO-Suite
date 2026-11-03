@@ -21,6 +21,10 @@ Windows: run `install.bat` once, then `run.bat`. Outlook drafts need Windows, cl
 - Audit output: `[SUS] Audit - <audit name> YYYY-MM-DD.xlsx` with a single **Audit Results** sheet. Run notes (portfolio fallbacks, duplicate department paths, unmatched rows, skipped blank rows) are shown on screen and in the downloadable **run report CSV**, not in the workbook.
 - HR output: `HR_Enriched_YYYY-MM-DD_HHMM.xlsx` (`Enriched Data`, plus optional report sheets). Text starting with `=` is stored as text, never as a formula.
 
+## Outlook drafts
+
+Available for every audit except the CTO/OTO/STO cascade (which has its own per-employee draft) once PC Portfolio details are added. Subject and wording live in `audit_suite/audits/email_templates.py` (plain text; blank line = new paragraph). The Unprocessed TORs email fills in the TOR count and the day count from the cutoff you choose. Standard rules: sent on behalf of `mySchedulehelpline@fraserhealth.ca`; To = unique Portfolio Emails (help-line address removed); CC = help-line + cleaned Coordinator Names; blank recipients and Sustainment Team excluded; the attachment is a filtered copy and the full workbook is unchanged.
+
 ## Reliability
 
 - Each audit runs in isolation: a failing audit is reported as failed and the others still finish. Per tool: rows read, findings, blank rows skipped; overall: succeeded / with warnings / failed.
