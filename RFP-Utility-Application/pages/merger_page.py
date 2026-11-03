@@ -389,9 +389,19 @@ class MergerPage(QWidget):
                         merger.append(tf.name)
                     else:
                         self._log(f"   ⚠️ Skipping unsupported file: {os.path.basename(p)}")
-            # write out
-            with open(out_path, "wb") as fout:
-                merger.write(fout)
+            # write to a temp name beside the target, then rename, so a failed
+            # merge never leaves a truncated PDF under the final name
+            tmp_out = out_path + ".partial"
+            try:
+                with open(tmp_out, "wb") as fout:
+                    merger.write(fout)
+                os.replace(tmp_out, out_path)
+            finally:
+                if os.path.exists(tmp_out):
+                    try:
+                        os.remove(tmp_out)
+                    except OSError:
+                        pass
             merger.close()
             return True, attachments
         except Exception as e:

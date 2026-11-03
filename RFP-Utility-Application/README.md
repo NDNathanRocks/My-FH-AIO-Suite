@@ -204,6 +204,30 @@ Default log location:
 - Company Info.csv
 - requirements.txt
 
+## Workflow contract (do not change without owner approval)
+
+These are relied on daily and are pinned by regression tests in `tests/`:
+
+- Tracker layout: vendor sheets with headers on row 3, data from row 4; `Summary` and `Vendor Credits` are not vendor sheets. Columns used: `Vendor ID`, `Site`, `Unit`, `Invoice #`, `RFP Prepared (Y/N)`, `Merged (Y/N)`, `Invoice Status`, `Remittance ID` and the amount/date columns mapped in `utils/app_utils.py`.
+- Generated RFP name: `{CompanyName} RFP {Invoice #} - {Site} {Unit}.pdf`. Merged name: `RFP {invoice} - {site} {unit}.pdf`.
+- PDF field mapping in `process_csv_and_fill_pdfs` (requestor, cost codes `3509030 UPP` / `3509200 UPP`, dd/mm/yy dates).
+- Only rows with `RFP Prepared (Y/N)` = `N` are generated when "only new" is on; generation stops at a blank `Invoice #` or a `Total` marker.
+- Invoice-number extraction from file names (`extract_invoice_number`, back-ticked IDs in the merger).
+- Tracker writes only change the target Y/N or status cells; formulas are preserved; saves are atomic (`save_workbook_safe`).
+
+## Tests
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest tests
+```
+
+Windows COM modules are stubbed, so the tests run on any OS. On Linux, PySide6 needs `libegl1`. One test is marked `xfail` on purpose: it documents a known crash that is waiting on a decision (see root `PLAN.md` D3).
+
+## Known issues awaiting a decision
+
+See root `PLAN.md` (D3–D5): the blank "RFP Prepared" fallback crashes; the "Total" end-marker column when the tracker has a leading blank column; blank HA check numbers recorded as `nan`.
+
 ## Troubleshooting
 
 - RuntimeError about static/ during fitz import:

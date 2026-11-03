@@ -8,3 +8,7 @@ PySide6_Addons==6.9.1
 PySide6_Essentials==6.9.1
 XlsxWriter==3.2.3
 xlwings==0.33.15
+# Imported by the app but previously missing from this file:
+Pillow>=10,<12
+psutil>=5.9,<8
+pywin32>=306; platform_system == "Windows"
