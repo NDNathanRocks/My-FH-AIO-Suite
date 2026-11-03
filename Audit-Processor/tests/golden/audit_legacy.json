@@ -1,0 +1,2915 @@
+{
+ "43_843|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "43_843|csv|email|True": {
+  "attachment_rows": 2,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca",
+   "Sam Example"
+  ],
+  "to": [
+   "pa2@example.org"
+  ]
+ },
+ "43_843|csv|plain": {
+  "filename": "[SUS] Audit - 43 - 843 coding while on GRTW DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Work Rule",
+    "EE ID",
+    "Pay Code Name",
+    "Date",
+    "Start Date Time",
+    "Extra"
+   ],
+   "rows": [
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "Work Rule",
+     "EE ID",
+     "Pay Code Name",
+     "Date",
+     "Start Date Time",
+     "Extra"
+    ],
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "43 - 843 coding while on GRTW"
+  }
+ },
+ "43_843|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Work Rule",
+    "EE ID",
+    "Pay Code Name",
+    "Date",
+    "Start Date Time",
+    "Extra",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "43_843|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Work Rule",
+    "EE ID",
+    "Pay Code Name",
+    "Date",
+    "Start Date Time",
+    "Extra",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "EE ID-only Scheduled Transfer Location fallback used; Multiple portfolio rows; first nonblank values used"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "EE ID-only Scheduled Transfer Location fallback used; Multiple portfolio rows; first nonblank values used"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "0 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "2 row(s) used EE ID-only fallback.",
+   "0 row(s) used Primary location fallback.",
+   "0 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "43_843|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "43_843|xlsx|email|True": {
+  "attachment_rows": 2,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca",
+   "Sam Example"
+  ],
+  "to": [
+   "pa2@example.org"
+  ]
+ },
+ "43_843|xlsx|plain": {
+  "filename": "[SUS] Audit - 43 - 843 coding while on GRTW DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Work Rule",
+    "EE ID",
+    "Pay Code Name",
+    "Date",
+    "Start Date Time",
+    "Extra"
+   ],
+   "rows": [
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b"
+    ]
+   ]
+  }
+ },
+ "43_843|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Work Rule",
+    "EE ID",
+    "Pay Code Name",
+    "Date",
+    "Start Date Time",
+    "Extra",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "43_843|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Work Rule",
+    "EE ID",
+    "Pay Code Name",
+    "Date",
+    "Start Date Time",
+    "Extra",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW work rule evidence",
+     "GRTW Plan",
+     "1001",
+     "Regular",
+     "2026-10-01",
+     "2026-10-01 07:00",
+     "a",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "EE ID-only Scheduled Transfer Location fallback used; Multiple portfolio rows; first nonblank values used"
+    ],
+    [
+     "Pay code containing 43 evidence",
+     "Day Shift",
+     "1001",
+     "43-Stat Holiday",
+     "2026-10-02",
+     "2026-10-02 07:00",
+     "b",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "EE ID-only Scheduled Transfer Location fallback used; Multiple portfolio rows; first nonblank values used"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "0 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "2 row(s) used EE ID-only fallback.",
+   "0 row(s) used Primary location fallback.",
+   "0 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "casuals_loa|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "casuals_loa|csv|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "casuals_loa|csv|plain": {
+  "filename": "[SUS] Audit - Casuals with LOA 1##.1 paycodes DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement"
+   ],
+   "rows": [
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "EE ID",
+     "Last Name",
+     "First Name",
+     "Actual Total Hrs (Include Corrections)",
+     "Pay Code Name",
+     "Worker Type",
+     "Labour Agreement"
+    ],
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "Casuals with LOA 1##.1 paycodes"
+  }
+ },
+ "casuals_loa|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "casuals_loa|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "casuals_loa|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "casuals_loa|xlsx|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "casuals_loa|xlsx|plain": {
+  "filename": "[SUS] Audit - Casuals with LOA 1##.1 paycodes DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement"
+   ],
+   "rows": [
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU"
+    ]
+   ]
+  }
+ },
+ "casuals_loa|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "casuals_loa|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Casual worker with LOA 1##.1 pay code",
+     "4001",
+     "Alpha",
+     "Ann",
+     "7:30",
+     "101.1-LOA Unpaid",
+     "Casual",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "employee_key": [
+  "1001",
+  "1001",
+  "77",
+  "",
+  "12"
+ ],
+ "grtw_mismatch|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "grtw_mismatch|csv|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "grtw_mismatch|csv|plain": {
+  "filename": "[SUS] Audit - GRTW Shifts without a valid GRTW LCT or WR DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time"
+   ],
+   "rows": [
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "Employee ID",
+     "Work Rule",
+     "Labour Category",
+     "Start Date Time",
+     "End Date Time"
+    ],
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "GRTW Shifts without a valid GRTW LCT or WR"
+  }
+ },
+ "grtw_mismatch|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "grtw_mismatch|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "FH/Site C/Unit 3",
+     "No WFM Dept Path match; EE ID-only Scheduled Transfer Location fallback used"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "1 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "grtw_mismatch|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "grtw_mismatch|xlsx|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "grtw_mismatch|xlsx|plain": {
+  "filename": "[SUS] Audit - GRTW Shifts without a valid GRTW LCT or WR DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time"
+   ],
+   "rows": [
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00"
+    ]
+   ]
+  }
+ },
+ "grtw_mismatch|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "grtw_mismatch|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "GRTW Work Rule, but Labour Category is not GRTW",
+     "2001",
+     "GRTW 4h",
+     "Unit A",
+     "2026-10-01 07:00",
+     "2026-10-01 11:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "FH/Site C/Unit 3",
+     "No WFM Dept Path match; EE ID-only Scheduled Transfer Location fallback used"
+    ],
+    [
+     "GRTW Labour Category, but Work Rule is not GRTW",
+     "2002",
+     "Regular",
+     "GRTW Transfer",
+     "2026-10-01 07:00",
+     "2026-10-01 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "1 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "leave_cascade": {
+  "estimated": [
+   0.0,
+   450.0,
+   270.0
+  ],
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Start Date",
+    "Duration (Hrs)",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name (Schedules)",
+    "Pay Code Name (Timecards)",
+    "Worker Type",
+    "Labour Agreement",
+    "Estimated Cascaded to LOA",
+    "Unreconciled Leave Shortage",
+    "Employee LOA Total",
+    "Scheduled LOA Hours Removed",
+    "Leave Type"
+   ],
+   "rows": [
+    [
+     "Hours Match",
+     "6001",
+     "Theta",
+     "Tia",
+     "01/10/2026",
+     "7:30",
+     "7:30",
+     "CTO Leave",
+     "96.1-NCO CTO",
+     "Regular",
+     "BCNU",
+     "0:00",
+     "0:00",
+     "15:00",
+     "7:30",
+     "CTO"
+    ],
+    [
+     "Hours Mismatched",
+     "6001",
+     "Theta",
+     "Tia",
+     "02/10/2026",
+     "7:30",
+     "0:00",
+     "CTO Leave",
+     "96.1-NCO CTO",
+     "Regular",
+     "BCNU",
+     "7:30",
+     "0:00",
+     "15:00",
+     "7:30",
+     "CTO"
+    ],
+    [
+     "Hours Mismatched",
+     "6002",
+     "Iota",
+     "Ike",
+     "05/10/2026",
+     "7:30",
+     "3:00",
+     "STO Leave",
+     "98.1-NCO STO",
+     "Regular",
+     "HSA",
+     "4:30",
+     "0:00",
+     "4:30",
+     "0:00",
+     "STO"
+    ]
+   ]
+  },
+  "summary": []
+ },
+ "leave_cascade|portfolio": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Start Date",
+    "Duration (Hrs)",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name (Schedules)",
+    "Pay Code Name (Timecards)",
+    "Worker Type",
+    "Labour Agreement",
+    "Estimated Cascaded to LOA",
+    "Unreconciled Leave Shortage",
+    "Employee LOA Total",
+    "Scheduled LOA Hours Removed",
+    "Leave Type",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Hours Match",
+     "6001",
+     "Theta",
+     "Tia",
+     "01/10/2026",
+     "7:30",
+     "7:30",
+     "CTO Leave",
+     "96.1-NCO CTO",
+     "Regular",
+     "BCNU",
+     "0:00",
+     "0:00",
+     "15:00",
+     "7:30",
+     "CTO",
+     "Portfolio A1",
+     "pa1@example.org",
+     "VCY - Pat Example",
+     "FH/Site A/Unit 1",
+     "Matched Scheduled Transfer Location by EE ID + date"
+    ],
+    [
+     "Hours Mismatched",
+     "6001",
+     "Theta",
+     "Tia",
+     "02/10/2026",
+     "7:30",
+     "0:00",
+     "CTO Leave",
+     "96.1-NCO CTO",
+     "Regular",
+     "BCNU",
+     "7:30",
+     "0:00",
+     "15:00",
+     "7:30",
+     "CTO",
+     "Portfolio A1",
+     "pa1@example.org",
+     "VCY - Pat Example",
+     "FH/Site A/Unit 1",
+     "EE ID-only Scheduled Transfer Location fallback used"
+    ],
+    [
+     "Hours Mismatched",
+     "6002",
+     "Iota",
+     "Ike",
+     "05/10/2026",
+     "7:30",
+     "3:00",
+     "STO Leave",
+     "98.1-NCO STO",
+     "Regular",
+     "HSA",
+     "4:30",
+     "0:00",
+     "4:30",
+     "0:00",
+     "STO",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "1 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "nba_oc_72|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "nba_oc_72|csv|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "nba_oc_72|csv|plain": {
+  "filename": "[SUS] Audit - NBA OC - 72 hours DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee 521 Total Hours",
+    "Employee 522 Total Hours",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement"
+   ],
+   "rows": [
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80.0",
+     "0.0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "Employee 521 Total Hours",
+     "Employee 522 Total Hours",
+     "EE ID",
+     "Last Name",
+     "First Name",
+     "Actual Total Hrs (Include Corrections)",
+     "Pay Code Name",
+     "Worker Type",
+     "Labour Agreement"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40",
+     "10",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40",
+     "10",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80",
+     "0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "NBA OC > 72 hours"
+  }
+ },
+ "nba_oc_72|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee 521 Total Hours",
+    "Employee 522 Total Hours",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80.0",
+     "0.0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "3 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "3 row(s) used Primary location fallback.",
+   "3 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "nba_oc_72|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee 521 Total Hours",
+    "Employee 522 Total Hours",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80.0",
+     "0.0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "3 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "3 row(s) used Primary location fallback.",
+   "3 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "nba_oc_72|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "nba_oc_72|xlsx|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "nba_oc_72|xlsx|plain": {
+  "filename": "[SUS] Audit - NBA OC - 72 hours DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee 521 Total Hours",
+    "Employee 522 Total Hours",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement"
+   ],
+   "rows": [
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80.0",
+     "0.0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU"
+    ]
+   ]
+  }
+ },
+ "nba_oc_72|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee 521 Total Hours",
+    "Employee 522 Total Hours",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80.0",
+     "0.0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "3 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "3 row(s) used Primary location fallback.",
+   "3 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "nba_oc_72|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee 521 Total Hours",
+    "Employee 522 Total Hours",
+    "EE ID",
+    "Last Name",
+    "First Name",
+    "Actual Total Hrs (Include Corrections)",
+    "Pay Code Name",
+    "Worker Type",
+    "Labour Agreement",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "40:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "522-NBA OC Grtr 72 used before 72 hours were recorded to 521",
+     "40.0",
+     "10.0",
+     "5001",
+     "Eps",
+     "Ed",
+     "10:00",
+     "522-NBA OC Grtr 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "521-NBA OC Less 72 total exceeds 72 hours",
+     "80.0",
+     "0.0",
+     "5002",
+     "Zeta",
+     "Zo",
+     "80:00",
+     "521-NBA OC Less 72",
+     "Regular",
+     "BCNU",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "3 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "3 row(s) used Primary location fallback.",
+   "3 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "negative_accrual|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "negative_accrual|csv|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "negative_accrual|csv|plain": {
+  "filename": "[SUS] Audit - Negative Hours Accrual Bank DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Negative Balance (Minutes)",
+    "EE ID",
+    "Available Balance",
+    "Accrual Code"
+   ],
+   "rows": [
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-450",
+     "7001",
+     "-7:30",
+     "Vacation"
+    ],
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "Negative Balance (Minutes)",
+     "EE ID",
+     "Available Balance",
+     "Accrual Code"
+    ],
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-450",
+     "7001",
+     "-7:30",
+     "Vacation"
+    ],
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "Negative Hours Accrual Bank"
+  }
+ },
+ "negative_accrual|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Negative Balance (Minutes)",
+    "EE ID",
+    "Available Balance",
+    "Accrual Code",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-450",
+     "7001",
+     "-7:30",
+     "Vacation",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "negative_accrual|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Negative Balance (Minutes)",
+    "EE ID",
+    "Available Balance",
+    "Accrual Code",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-450",
+     "7001",
+     "-7:30",
+     "Vacation",
+     "No Matched Portfolio",
+     "",
+     "",
+     "FH/Site Z/Unit 0",
+     "No WFM Dept Path match; EE ID-only Scheduled Transfer Location fallback used"
+    ],
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "1 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "negative_accrual|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "negative_accrual|xlsx|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "negative_accrual|xlsx|plain": {
+  "filename": "[SUS] Audit - Negative Hours Accrual Bank DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Negative Balance (Minutes)",
+    "EE ID",
+    "Available Balance",
+    "Accrual Code"
+   ],
+   "rows": [
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026"
+    ]
+   ]
+  }
+ },
+ "negative_accrual|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Negative Balance (Minutes)",
+    "EE ID",
+    "Available Balance",
+    "Accrual Code",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "negative_accrual|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Negative Balance (Minutes)",
+    "EE ID",
+    "Available Balance",
+    "Accrual Code",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Non-Sick accrual code with negative available balance",
+     "-45",
+     "7004",
+     "-0:45",
+     "Stat 2026",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "1 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "1 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "ot_swapped_lct|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "ot_swapped_lct|csv|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "ot_swapped_lct|csv|plain": {
+  "filename": "[SUS] Audit - OT Work rule and swapped in LCT DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time"
+   ],
+   "rows": [
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "Employee ID",
+     "Work Rule",
+     "Labour Category",
+     "Start Date Time",
+     "End Date Time"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "OT Work rule and swapped in LCT"
+  }
+ },
+ "ot_swapped_lct|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "ot_swapped_lct|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "ot_swapped_lct|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "ot_swapped_lct|xlsx|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "ot_swapped_lct|xlsx|plain": {
+  "filename": "[SUS] Audit - OT Work rule and swapped in LCT DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time"
+   ],
+   "rows": [
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00"
+    ]
+   ]
+  }
+ },
+ "ot_swapped_lct|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "ot_swapped_lct|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "Employee ID",
+    "Work Rule",
+    "Labour Category",
+    "Start Date Time",
+    "End Date Time",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2004",
+     "OT 1.5",
+     "5.2 Swap",
+     "2026-10-03 07:00",
+     "2026-10-03 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "OT/Day Off Work Rule with Labour Category containing 5.2",
+     "2005",
+     "Day Off Worked",
+     "Dept 5.2",
+     "2026-10-04 07:00",
+     "2026-10-04 15:00",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "portfolio_only|None|False": {
+  "filename": "[SUS] Audit - My Tool DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Employee Number",
+    "Shift Date",
+    "Note",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "1001",
+     "01/10/2026 07:00",
+     "x",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "1003",
+     "03/10/2026",
+     "y",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "9999",
+     "01/10/2026",
+     "z",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "",
+     "",
+     "blank id",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "Missing employee identifier"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "4 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "3 row(s) used Primary location fallback.",
+   "3 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "portfolio_only|None|True": {
+  "filename": "[SUS] Audit - My Tool DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Employee Number",
+    "Shift Date",
+    "Note",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "1001",
+     "01/10/2026 07:00",
+     "x",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "EE ID-only Scheduled Transfer Location fallback used; Multiple portfolio rows; first nonblank values used"
+    ],
+    [
+     "1003",
+     "03/10/2026",
+     "y",
+     "Portfolio B9",
+     "pb9@example.org",
+     "VCY - Lee Example",
+     "FH/Site B/Unit 9",
+     "EE ID-only Primary location (path) fallback used"
+    ],
+    [
+     "9999",
+     "01/10/2026",
+     "z",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "",
+     "",
+     "blank id",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "Missing employee identifier"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "2 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "portfolio_only|Shift Date|False": {
+  "filename": "[SUS] Audit - My Tool DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Employee Number",
+    "Shift Date",
+    "Note",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "1001",
+     "01/10/2026 07:00",
+     "x",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "Matched Scheduled Transfer Location by EE ID + exact date/time; Multiple portfolio rows; first nonblank values used"
+    ],
+    [
+     "1003",
+     "03/10/2026",
+     "y",
+     "Portfolio B9",
+     "pb9@example.org",
+     "VCY - Lee Example",
+     "FH/Site B/Unit 9",
+     "Primary location (path) fallback used for matched EE ID + date"
+    ],
+    [
+     "9999",
+     "01/10/2026",
+     "z",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "",
+     "",
+     "blank id",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "Missing employee identifier"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "portfolio_only|Shift Date|True": {
+  "filename": "[SUS] Audit - My Tool DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Employee Number",
+    "Shift Date",
+    "Note",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "1001",
+     "01/10/2026 07:00",
+     "x",
+     "Portfolio A2",
+     "pa2@example.org; mySchedulehelpline@fraserhealth.ca",
+     "VCY - Sam Example",
+     "FH/Site A/Unit 2",
+     "Matched Scheduled Transfer Location by EE ID + exact date/time; Multiple portfolio rows; first nonblank values used"
+    ],
+    [
+     "1003",
+     "03/10/2026",
+     "y",
+     "Portfolio B9",
+     "pb9@example.org",
+     "VCY - Lee Example",
+     "FH/Site B/Unit 9",
+     "Primary location (path) fallback used for matched EE ID + date"
+    ],
+    [
+     "9999",
+     "01/10/2026",
+     "z",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "",
+     "",
+     "blank id",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "Missing employee identifier"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "1 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "safe_filename": [
+  "A-B-C-",
+  "x",
+  "Audit",
+  "Normal name"
+ ],
+ "time_to_minutes": [
+  450.0,
+  -75.0,
+  62.5,
+  null,
+  null,
+  6000.0
+ ],
+ "unprocessed_tors|csv|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "unprocessed_tors|csv|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "unprocessed_tors|csv|plain": {
+  "filename": "[SUS] Audit - Unprocessed TORs DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Status",
+    "Creation Date",
+    "Time-off Request ID"
+   ],
+   "rows": [
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4"
+    ]
+   ]
+  },
+  "sheet": {
+   "rows": [
+    [
+     "Audit Finding",
+     "Days Since Creation",
+     "EE ID",
+     "Status",
+     "Creation Date",
+     "Time-off Request ID"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "33",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "32",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4"
+    ]
+   ],
+   "sheets": [
+    "Audit Results",
+    "Audit Summary"
+   ],
+   "title": "Unprocessed TORs"
+  }
+ },
+ "unprocessed_tors|csv|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Status",
+    "Creation Date",
+    "Time-off Request ID",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "unprocessed_tors|csv|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Status",
+    "Creation Date",
+    "Time-off Request ID",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "unprocessed_tors|xlsx|email|False": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "unprocessed_tors|xlsx|email|True": {
+  "attachment_rows": 0,
+  "cc": [
+   "mySchedulehelpline@fraserhealth.ca"
+  ],
+  "to": []
+ },
+ "unprocessed_tors|xlsx|plain": {
+  "filename": "[SUS] Audit - Unprocessed TORs DATE.xlsx",
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Status",
+    "Creation Date",
+    "Time-off Request ID"
+   ],
+   "rows": [
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4"
+    ]
+   ]
+  }
+ },
+ "unprocessed_tors|xlsx|portfolio|False": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Status",
+    "Creation Date",
+    "Time-off Request ID",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ },
+ "unprocessed_tors|xlsx|portfolio|True": {
+  "frame": {
+   "columns": [
+    "Audit Finding",
+    "EE ID",
+    "Status",
+    "Creation Date",
+    "Time-off Request ID",
+    "Portfolio Description",
+    "Portfolio Email",
+    "Coordinator Name",
+    "Matched WFM Dept Path",
+    "Portfolio Match Note"
+   ],
+   "rows": [
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3001",
+     "Submitted",
+     "01/10/2026",
+     "T1",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ],
+    [
+     "Unprocessed TOR created before 10 Oct 2026",
+     "3004",
+     " pending ",
+     "02/10/2026",
+     "T4",
+     "No Matched Portfolio",
+     "",
+     "",
+     "",
+     "No Employee or Primary Location Path Found in Audit Schedule"
+    ]
+   ]
+  },
+  "summary": [
+   "2 Supervisor-Portfolio rows matched path 'fh/site a/unit 2'; first nonblank values used.",
+   "2 row(s) had no matched portfolio.",
+   "0 row(s) used date-only fallback.",
+   "0 row(s) used EE ID-only fallback.",
+   "2 row(s) used Primary location fallback.",
+   "2 row(s) had no employee/location path in Schedule Audit."
+  ]
+ }
+}

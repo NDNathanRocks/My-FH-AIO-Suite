@@ -85,6 +85,8 @@ def build_ha_lookup(ha_xlsx: str) -> Dict[Tuple[str, str], Tuple[float, str]]:
             paid_amt = 0.0
         paid_amt = round(paid_amt, 2)
         rem_id = r.get("Last Issued Check Num", "")
+        if pd.isna(rem_id) or str(rem_id).strip().lower() in ("nan", "none", "nat"):  # blank cell (D5)
+            rem_id = ""
         lookup[(vid, inv_norm)] = (paid_amt, rem_id)
     return lookup
 

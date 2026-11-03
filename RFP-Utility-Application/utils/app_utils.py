@@ -611,6 +611,10 @@ def process_csv_and_fill_pdfs(
 
         inv_val = str(raw[invoice_idx] or "").strip()
         col_b_val = str(raw[1] if len(raw) > 1 else "").strip() if raw else ""
+        # The tracker footer puts "Total" in the Notes column (left of Invoice #) and the
+        # invoice count under Invoice #, so also look at every cell left of the invoice column.
+        if col_b_val.lower() != "total":
+            col_b_val = next((str(c or "").strip() for c in raw[:invoice_idx] if str(c or "").strip().lower() == "total"), col_b_val)
 
         # Treat a blank invoice cell or an explicit Total marker as the end of the sheet.
         # This prevents trailing summary/footer rows from producing an extra RFP.
@@ -693,39 +697,20 @@ def process_csv_and_fill_pdfs(
                 kept += 1
             else:
                 skipped += 1
-        # If no explicit 'N' rows were found but there are blank RFP cells,
-        # treat blanks as 'N' as a fallback (helpful when trackers don't mark 'N'),
-        # but ONLY if they also have a valid Invoice #.
+        # No row is marked 'N' but some RFP cells are blank: report it and generate nothing
+        # (owner decision D3 - blank cells are not treated as new).
         if kept == 0 and state_counts.get("<blank>", 0) > 0:
-            blank_rows_with_invoice = [
-                row for row in invoice_rows
-                if not str(row.get(rfp_col, "")).strip() and _is_usable_invoice_id(row.get(invoice_col_name, ""))
-            ]
-            if blank_rows_with_invoice:
-                filtered_rows = blank_rows_with_invoice
-                logger.warning(
-                    "RFP only_new fallback: no explicit 'N' found, using blank RFP cells (with Invoice #) as new | company=%s | blank_rows_with_invoice=%s | total_blanks=%s",
-                    company,
-                    len(blank_rows_with_invoice),
-                    state_counts.get("<blank>", 0),
-                    extra={"run_id": run_id},
-                )
-                for idx, row in enumerate(blank_rows_with_invoice[:5], start=1):
-                    logger.debug(
-                        "RFP blank-as-new sample | idx=%s | invoice=%s | site=%s | unit=%s",
-                        idx,
-                        row.get(invoice_col_name, ""),
-                        row.get(site_col_name, ""),
-                        row.get(unit_col_name, ""),
-                        extra={"run_id": run_id},
-                    )
-            else:
-                logger.warning(
-                    "RFP only_new: no explicit 'N' found, and blank RFP cells had no Invoice #, skipping generation | company=%s | total_blanks=%s",
-                    company,
-                    state_counts.get("<blank>", 0),
-                    extra={"run_id": run_id},
-                )
+            blanks = state_counts["<blank>"]
+            logger.warning(
+                "RFP only_new: no rows marked 'N'; %s blank RFP Prepared cell(s) not generated | company=%s",
+                blanks,
+                company,
+                extra={"run_id": run_id},
+            )
+            raise ValueError(
+                f"No new RFPs to generate: no rows are marked 'N' in '{rfp_col}'. "
+                f"{blanks} row(s) have a blank '{rfp_col}' value and were not generated - mark them 'N' to include them."
+            )
 
         invoice_rows = [row for row in filtered_rows]
         logger.info(

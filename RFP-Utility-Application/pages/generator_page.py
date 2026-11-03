@@ -479,8 +479,9 @@ def _update_tracker_rfp_prepared(tracker_path: str, sheet_name: str, invoice_num
                     if skip_update:
                         # Collect row data for export
                         row_data = {}
-                        for cell in ws[row]:
-                            col_letter = get_column_letter(cell.column)
+                        # Read-only rows contain EmptyCell objects without .column; use position instead.
+                        for col_idx, cell in enumerate(ws[row], start=1):
+                            col_letter = get_column_letter(getattr(cell, "column", None) or col_idx)
                             # Find header for this column
                             header_cell = ws[f"{col_letter}{HEADER_ROW_INDEX}"]
                             header = str(header_cell.value or "").strip()
@@ -766,12 +767,13 @@ class GenerationWorker(QObject):
             self.error.emit(str(e))
 
         finally:
-            # Cleanup temp recalc copy if it exists
-            if self.recalc_copy_path and os.path.exists(self.recalc_copy_path):
-                try:
-                    os.unlink(self.recalc_copy_path)
-                except OSError:
-                    pass
+            # Cleanup temp recalc copy and the temp tracker CSV (contains invoice data)
+            for temp_path in (self.recalc_copy_path, self.invoice_csv):
+                if temp_path and os.path.exists(temp_path):
+                    try:
+                        os.unlink(temp_path)
+                    except OSError:
+                        pass
 
 # ──────────────────────────────────────────────────────────────────────────────
 # UI Class

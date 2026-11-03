@@ -1,0 +1,63 @@
+# Root ignore rules. These only affect untracked files; see PLAN.md D1 for
+# artifacts that are already tracked.
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Secrets / environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# Databases and backups
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.backup.db
+
+# Logs, reports, exports, generated results
+*.log
+logs/
+Outlook-Export/logs/
+Outlook-Export/reports/
+Outlook-Export/backup/
+*.lock
+
+# Build artifacts
+build/
+dist/
+*.exe
+*.spec
+
+# Temp / OS / editor
+*.tmp
+*.~tmp
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Uploaded or generated HR data (Audit-Processor never needs these on disk)
+Audit-Processor/uploads/
+Audit-Processor/output/
+*.xlsx
+*.xlsm
+*.xls
+!**/tests/fixtures/**/*.xlsx
+
+# Macro-Vision user data (per machine)
+Macro-Vision/vision_suite_save.json
+Macro-Vision/vision_suite_save.json.*
+Macro-Vision/vision_suite_run_log.txt*
