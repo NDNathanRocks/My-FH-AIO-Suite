@@ -21,4 +21,4 @@ Monorepo of independent Fraser Health staffing/HR tools. `PROMPT.MD` is the sour
 
 ## Testing
 
-Use a venv: `pip install -r <project>/requirements-dev.txt` where present, then run pytest per project. Outlook COM, Excel COM and Qt UI cannot run on Linux CI — test logic with mocks and validate on the Windows target (see each README).
+Per project: `pip install -r requirements-dev.txt`, then `python -m pytest tests` from that project folder (Audit-Processor, Outlook-Export, RFP-Utility-Application). RFP on Linux needs `libegl1` for PySide6. Outlook COM, Excel COM and Qt UI cannot run on Linux CI — test logic with mocks and validate on the Windows target (see each README).

@@ -18,7 +18,7 @@ Source of truth: `PROMPT.MD`. Status legend: [x] done · [~] partial · [ ] open
 - [x] Stage 1 – Audit-Processor: modular package, tests, remove Audit Summary sheet, merge HR toolbox.
 - [x] Stage 2 – Outlook-Export: core module, manifest + reconciliation + retry, safe migration, tests.
 - [x] Stage 3 – RFP: regression tests for transformations, safe fixes only.
-- [ ] Stage 4 – Macro-Vision + per-project READMEs + final validation sweep.
+- [x] Stage 4 – Macro-Vision + per-project READMEs + final validation sweep.
 
 ## Feature-parity checklist (HR Data Toolbox → Audit-Processor)
 
@@ -73,7 +73,16 @@ Differences: shared header styling, formula-like text kept as text, per-tool iso
 - **D5 – RFP `nan` remittance (22).** Recommend treating blank/`nan` check numbers as empty so `nan` is never written to the tracker. Changes written values, so not done without approval.
 - **D2 – Remove `HR Data Toolbox Web v1.3/`.** Parity is demonstrated (above). Recommend deleting the folder after you've used the merged page for one real run; rollback is `git revert`. Kept until you approve.
 
+## Remaining limitations / target-machine validation
+
+- Outlook COM, Excel COM, Outlook drafts and the Tk/PySide6 GUIs on Windows were not run here (logic tested with fakes; RFP pages smoke-launched offscreen). Steps: `Outlook-Export/README.md` → "Validate on the target Windows PC"; Audit drafts: create one draft per audit type.
+- `Outlook-Export/dist/InboxEmailExporter.exe` is the old v1.5.2 build. It stays compatible with the migrated DB (v1.5.2 only uses `exports`), but rebuild with `py build_v1_5_2.py` to get reconciliation/retry.
+- Macro-Vision: no automated tests (needs a desktop session); syntax-checked only.
+- No dependency vulnerability scanner was available offline; dependencies are pinned/ranged per project.
+
 ## Completed work
+
+**Stage 4 – Sweep.** Added Macro-Vision README. Ran all suites (Audit 89, Outlook 44, RFP 52 + 1 documented xfail), `py_compile` on every tracked script, ruff (pyflakes) on changed code, and searches for secrets (none), machine paths and TODOs (only in already-tracked artifacts → D1).
 
 **Stage 3 – RFP regression coverage.** Added 53 characterization tests on the pinned dependency versions: invoice-number extraction, currency/filename helpers, real-template PDF field filling and names, tracker update (only the Y/N cell changes, formulas kept), HA lookup, merger naming/merge. Also an offscreen launch of all 9 pages. Fixed only behaviour-preserving issues (17–20); three items need your decision (D3–D5). No output names, columns or mappings changed.
 
